@@ -4,13 +4,13 @@ import styled from "styled-components";
 export const Screen = styled.div`
   background-color: var(--primary);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
-  background-size: cover;
+  background-size: flex;
+   width:1000px;
 
   overflow: hidden ;
   
   background-position: center;
-  width: 100%;
-  min-height: 100vh;
+  
     width:1000px;
 height:1000px;
   display: block;
@@ -19,26 +19,26 @@ height:1000px;
 
 // Used for providing space between components
 export const SpacerXSmall = styled.div`
-  height: 38px;
-  width: 38px;
+  height: 10px;
+  width: 10px;
 `;
 
 // Used for providing space between components
 export const SpacerSmall = styled.div`
-  height: 36px;
-  width: 36px;
+  height: 24px;
+  width: 24px;
 `;
 
 // Used for providing space between components
 export const SpacerMedium = styled.div`
-  height: 44px;
-  width: 44px;
+  height: 40px;
+  width: 40px;
 `;
 
 // Used for providing space between components
 export const SpacerLarge = styled.div`
-  height: 52px;
-  width: 52px;
+  height: 50px;
+  width: 50px;
 `;
 
 // Used for providing a wrapper around a component
@@ -49,7 +49,7 @@ export const Container = styled.div`
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-  width: 70%;
+  width: 80%;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
@@ -58,8 +58,8 @@ export const Container = styled.div`
 export const TextTitle = styled.p`
   color: var(--primary-text);
   font-size: 22px;
-  font-weight: 500;
-  line-height: 1.6;
+  font-weight: 100;
+  line-height: 1.2;
 `;
 
 export const TextSubTitle = styled.p`
