@@ -76,7 +76,7 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 1px dashed var(--secondary);
+  border: 1px solid var(--secondary);
   background-color: var(--accent);
   border-radius: 50%;
   width: 50px;
@@ -198,12 +198,12 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 4, backgroundColor: "var(--primary)" }}
+        style={{ padding: 1, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
+        <ResponsiveWrapper flex={2} style={{ padding: 1 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             
           </s.Container>
@@ -215,18 +215,18 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 2,
-              borderRadius: 4,
+              padding: 20,
+              borderRadius: 14,
               border: "4px solid var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
             
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} style={{ padding: 10 }} />
+            <StyledImg alt={"example"} src={"/config/images/example.gif"} style={{ padding:15 }} />
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 30,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
@@ -324,7 +324,7 @@ function App() {
                     <s.SpacerMedium />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
-                        style={{ lineHeight: 0.4 }}
+                        style={{ lineHeight: 1 }}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
