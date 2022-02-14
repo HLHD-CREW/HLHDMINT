@@ -198,19 +198,19 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 34, backgroundColor: "var(--primary)" }}
+        style={{ padding: 4, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={5} style={{ padding: 5 }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 2 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             
           </s.Container>
           <s.SpacerLarge />
           <s.Container
             
-            flex={10}
+            flex={5}
             jc={"center"}
             ai={"center"}
             style={{
@@ -222,7 +222,7 @@ function App() {
             }}
           >
             
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} />
+            <StyledImg alt={"example"} src={"/config/images/example.gif"} style={{ padding: 10 }} />
             <s.TextTitle
               style={{
                 textAlign: "center",
