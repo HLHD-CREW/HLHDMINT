@@ -60,14 +60,14 @@ export const ResponsiveWrapper = styled.div`
   justify-content: stretched;
   align-items: stretched;
   width: 80%;
-  @media (min-width: 767px) {
+  @media (min-width: 600px) {
     flex-direction: row;
   }
 `;
 
 export const StyledLogo = styled.img`
   width: 200px;
-  @media (min-width: 767px) {
+  @media (min-width: 400px) {
     width: 300px;
   }
   transition: width 0.5s;
@@ -76,15 +76,15 @@ export const StyledLogo = styled.img`
 
 export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
-  border: 4px dashed var(--secondary);
+  border: 1px dashed var(--secondary);
   background-color: var(--accent);
-  border-radius: 100%;
-  width: 100px;
+  border-radius: 50%;
+  width: 50px;
   @media (min-width: 500px) {
-    width: 250px;
+    width: 150px;
   }
   @media (min-width: 500px) {
-    width: 200px;
+    width: 150px;
   }
   transition: width 0.5s;
 `;
@@ -198,25 +198,25 @@ function App() {
       <s.Container
         flex={1}
         ai={"center"}
-        style={{ padding: 24, backgroundColor: "var(--primary)" }}
+        style={{ padding: 34, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
-        <StyledLogo alt={"logo"} src={"/config/images/logo.png"} />
+        
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={1} style={{ padding: 4 }} test>
+        <ResponsiveWrapper flex={5} style={{ padding: 5 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             
           </s.Container>
           <s.SpacerLarge />
           <s.Container
             
-            flex={3}
+            flex={10}
             jc={"center"}
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 14,
-              borderRadius: 14,
+              padding: 2,
+              borderRadius: 4,
               border: "4px solid var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
