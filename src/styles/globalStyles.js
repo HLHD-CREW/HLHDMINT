@@ -5,35 +5,40 @@ export const Screen = styled.div`
   background-color: var(--primary);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
+
+  overflow: hidden ;
+  
   background-position: center;
   width: 100%;
   min-height: 100vh;
-  display: flex;
+    width:1000px;
+height:1000px;
+  display: block;
   flex-direction: column;
 `;
 
 // Used for providing space between components
 export const SpacerXSmall = styled.div`
-  height: 8px;
-  width: 8px;
+  height: 38px;
+  width: 38px;
 `;
 
 // Used for providing space between components
 export const SpacerSmall = styled.div`
-  height: 16px;
-  width: 16px;
+  height: 36px;
+  width: 36px;
 `;
 
 // Used for providing space between components
 export const SpacerMedium = styled.div`
-  height: 24px;
-  width: 24px;
+  height: 44px;
+  width: 44px;
 `;
 
 // Used for providing space between components
 export const SpacerLarge = styled.div`
-  height: 32px;
-  width: 32px;
+  height: 52px;
+  width: 52px;
 `;
 
 // Used for providing a wrapper around a component
@@ -44,7 +49,7 @@ export const Container = styled.div`
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-  width: 50%;
+  width: 70%;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
