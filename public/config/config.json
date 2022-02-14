@@ -1,0 +1,18 @@
+{
+  "Transaction": "Check Your Transaction on the Blockchain",
+  "CONTRACT_ADDRESS": "0x7E2A853626D75321d2B6eD060f6320324D31b7e8",
+  "SCAN_LINK": "https://etherscan.io/address/0x7e2a853626d75321d2b6ed060f6320324d31b7e8",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "Happy Little Hairdos",
+  "SYMBOL": "HLHD",
+  "WEI_COST": 100000000000000000,
+  "DISPLAY_COST": 0.1,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "OpenSea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/hlhd",
+  "SHOW_BACKGROUND": false
+}
