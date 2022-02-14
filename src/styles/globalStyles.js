@@ -5,13 +5,13 @@ export const Screen = styled.div`
   background-color: var(--primary);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: flex;
-   width:1000px;
+   width:800px;
 
   overflow: hidden ;
   
   background-position: center;
   
-    width:1000px;
+    width:800px;
 height:1000px;
   display: block;
   flex-direction: column;
