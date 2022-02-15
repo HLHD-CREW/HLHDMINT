@@ -9,6 +9,7 @@
   },
   "NFT_NAME": "Happy Little Hairdos",
   "SYMBOL": "HLHD",
+  "MAX_SUPPLY": 10000,
   "WEI_COST": 100000000000000000,
   "DISPLAY_COST": 0.1,
   "GAS_LIMIT": 285000,
