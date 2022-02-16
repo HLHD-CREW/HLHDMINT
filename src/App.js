@@ -54,13 +54,13 @@ export const StyledRoundButton = styled.button`
 `;
 
 export const ResponsiveWrapper = styled.div`
-  display: flex;
-  flex: 1;
+  display: inline-flex;
+  flex: 2;
   flex-direction: column;
   justify-content: stretched;
-  align-items: stretched;
-  width: 80%;
-  @media (min-width: 600px) {
+  align-items: center;
+  width: 70%;
+  @media (min-width: 400px) {
     flex-direction: row;
   }
 `;
@@ -78,12 +78,15 @@ export const StyledImg = styled.img`
   box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.7);
   border: 1px solid var(--secondary);
   background-color: var(--accent);
+  background-size: contain;
+background-repeat: no-repeat;
   border-radius: 50%;
-  width: 50px;
-  @media (min-width: 500px) {
+  width: 10px;
+    align-items: center;
+  @media (min-width: 300px) {
     width: 150px;
   }
-  @media (min-width: 500px) {
+  @media (min-width: 300px) {
     width: 150px;
   }
   transition: width 0.5s;
@@ -196,37 +199,38 @@ function App() {
   return (
     <s.Screen>
       <s.Container
-        flex={1}
+        flex={3}
         ai={"center"}
         style={{ padding: 1, backgroundColor: "var(--primary)" }}
         image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
       >
         
         <s.SpacerSmall />
-        <ResponsiveWrapper flex={2} style={{ padding: 1 }} test>
+        <ResponsiveWrapper flex={1} style={{ padding: 1}} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
             
           </s.Container>
           <s.SpacerLarge />
           <s.Container
             
-            flex={5}
+            flex={9}
             jc={"center"}
             ai={"center"}
             style={{
               backgroundColor: "var(--accent)",
-              padding: 20,
+              padding: 30,
               borderRadius: 14,
               border: "4px solid var(--secondary)",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
             }}
           >
             
-            <StyledImg alt={"example"} src={"/config/images/example.gif"} style={{ padding:15 }} />
+            <StyledImg alt={"example"} src={"/config/images/example.gif"} style={{ padding:1, }} />
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 30,
+                fontSize: 25,
+                
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
@@ -378,7 +382,7 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
+        <s.Container jc={"center"} ai={"center"} style={{ width: "50%" }}>
           <s.TextDescription
             style={{
               textAlign: "center",
