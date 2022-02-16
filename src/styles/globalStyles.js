@@ -6,14 +6,14 @@ export const Screen = styled.div`
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
  background-size: contain;
 background-repeat: no-repeat;
-    max-width: 35%;
+    max-width: 100%;
 
   overflow: hidden ;
   
   background-position: center;
   
     
-height:auto;
+height:850px;
   display: block;
   flex-direction: column;
 `;
