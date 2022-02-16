@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Screen = styled.div`
   background-color: var(--primary);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
- background-size: contain;
+ background-size: cover;
 background-repeat: no-repeat;
     max-width: 60%;
 
