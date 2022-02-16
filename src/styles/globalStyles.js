@@ -4,14 +4,14 @@ import styled from "styled-components";
 export const Screen = styled.div`
   background-color: var(--primary);
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
- background-size: cover;
-background-repeat: no-repeat;
-    max-width: 60%;
-
-  overflow: hidden ;
-  
-  background-position: center;
-  
+ background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    background-color: #fff;
+    -webkit-background-size: calc(100vw) calc(100vh);
+    -moz-background-size: calc(100vw) calc(100vh);
+    -o-background-size: calc(100vw) calc(100vh);
+    background-size: calc(100vw) calc(100vh);
     
 height:850px;
   display: block;
@@ -50,10 +50,16 @@ export const Container = styled.div`
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-    max-width: 80%;
+    max-width: 100%;
+    height:auto;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
   background-position: center;
+   display: -webkit-flex; /* old versions of Chrome/Safari/Opera */
+  display: -ms-flexbox; /* IE10 */
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* old versions of Chrome/Safari/Opera */
 `;
 
 export const TextTitle = styled.p`
