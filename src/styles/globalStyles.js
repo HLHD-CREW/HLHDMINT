@@ -6,7 +6,7 @@ export const Screen = styled.div`
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
  background-size: contain;
 background-repeat: no-repeat;
-    max-width: 100%;
+    max-width: 60%;
 
   overflow: hidden ;
   
