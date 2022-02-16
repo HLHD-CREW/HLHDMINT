@@ -55,13 +55,14 @@ export const StyledRoundButton = styled.button`
 
 export const ResponsiveWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   flex: 2;
   flex-direction: column;
   height: 100vh;
   justify-content: stretched;
   align-items: center;
-  width: 100%;
-  @media (min-width: 300px) {
+  width: 80%;
+  @media (min-width: 400px) {
     flex-direction: row;
   }
 `;
