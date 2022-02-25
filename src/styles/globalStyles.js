@@ -32,8 +32,8 @@ export const SpacerSmall = styled.div`
 
 // Used for providing space between components
 export const SpacerMedium = styled.div`
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 `;
 
 // Used for providing space between components
@@ -45,12 +45,12 @@ export const SpacerLarge = styled.div`
 // Used for providing a wrapper around a component
 export const Container = styled.div`
   display: flex;
-  flex: ${({ flex }) => (flex ? flex : 0)};
+  flex: ${({ flex }) => (flex ? flex : 1)};
   flex-direction: ${({ fd }) => (fd ? fd : "column")};
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
   background-color: ${({ test }) => (test ? "pink" : "none")};
-    max-width: 100%;
+    max-width: auto;
     height:auto;
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: cover;
